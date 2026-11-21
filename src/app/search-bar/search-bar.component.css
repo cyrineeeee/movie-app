@@ -1,0 +1,2 @@
+.search { display: flex; justify-content: flex-end; align-items: center; gap: 8px; padding: 10px 20px; color: #ffe01b; }
+input { background: #000; border: 1px solid #ffe01b; color: #ffe01b; padding: 4px 8px; }

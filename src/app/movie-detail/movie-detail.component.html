@@ -1,0 +1,17 @@
+<div class="detail" *ngIf="movie() as m">
+  <div class="poster">
+    <img [src]="service.imgUrl + m.poster_path" [alt]="m.title" />
+    <fa-icon class="heart" [class.on]="liked()" [icon]="faHeart" (click)="toggle(m.id)" />
+  </div>
+  <div class="info">
+    <h2>{{ m.title }}</h2>
+    <p><b>Original title</b> {{ m.original_title }}</p>
+    <p><b>Original language</b> {{ m.original_language }}</p>
+    <p><b>Release date</b> {{ m.release_date | date: 'MMM d, y' }}</p>
+    <p><b>Popularity</b> {{ m.popularity }}</p>
+    <p><b>Vote average</b> {{ m.vote_average }}</p>
+    <p><b>Vote count</b> {{ m.vote_count }}</p>
+    <p><b>Overview</b></p>
+    <p>{{ m.overview }}</p>
+  </div>
+</div>

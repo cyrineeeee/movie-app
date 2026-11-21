@@ -1,0 +1,9 @@
+<div class="grid" *ngIf="movies().length > 0; else empty">
+  @for (m of movies(); track m.id) {
+    <a [routerLink]="['/movie', m.id]">
+      <img [src]="service.imgUrl + m.poster_path" [alt]="m.title" />
+      <div class="title">{{ m.title }}</div>
+    </a>
+  }
+</div>
+<ng-template #empty><p class="empty">Votre wishlist est vide.</p></ng-template>

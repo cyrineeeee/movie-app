@@ -1,0 +1,7 @@
+.detail { display: flex; gap: 20px; padding: 20px; }
+.poster { position: relative; width: 300px; }
+img { width: 100%; display: block; }
+.heart { position: absolute; top: 6px; right: 6px; color: #fff; cursor: pointer; font-size: 20px; }
+.heart.on { color: red; }
+b { color: #ffe01b; font-family: Georgia, serif; margin-right: 8px; }
+h2 { font-family: Georgia, serif; }
